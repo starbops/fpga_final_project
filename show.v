@@ -355,140 +355,140 @@ module show(
 
 	always@(posedge lclk) begin
 		if(reset) c1_state<=1;
-		else if((center_xb-center_x1)*(center_xb-center_x1)+(center_yb-center_y1)*(center_yb-center_y1)<=distance*distance)
+		else if((center_xb<center_x1+c_radius)&&(center_xb>center_x1-c_radius)&&(center_yb<center_y1+c_radius)&&(center_yb>center_y1-c_radius))
 			c1_state<=0;
 		else c1_state<=c1_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c2_state<=1;
-		else if((center_xb-center_x2)*(center_xb-center_x2)+(center_yb-center_y2)*(center_yb-center_y2)<=distance*distance)
+		else if((center_xb<center_x2+c_radius)&&(center_xb>center_x2-c_radius)&&(center_yb<center_y2+c_radius)&&(center_yb>center_y2-c_radius))
 			c2_state<=0;
 		else c2_state<=c2_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c3_state<=1;
-		else if((center_xb-center_x3)*(center_xb-center_x3)+(center_yb-center_y3)*(center_yb-center_y3)<=distance*distance)
+		else if((center_xb<center_x3+c_radius)&&(center_xb>center_x3-c_radius)&&(center_yb<center_y3+c_radius)&&(center_yb>center_y3-c_radius))
 			c3_state<=0;
 		else c3_state<=c3_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c4_state<=1;
-		else if((center_xb-center_x4)*(center_xb-center_x4)+(center_yb-center_y4)*(center_yb-center_y4)<=distance*distance)
+		else if((center_xb<center_x4+c_radius)&&(center_xb>center_x4-c_radius)&&(center_yb<center_y4+c_radius)&&(center_yb>center_y4-c_radius))
 			c4_state<=0;
 		else c4_state<=c4_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c5_state<=1;
-		else if((center_xb-center_x5)*(center_xb-center_x5)+(center_yb-center_y5)*(center_yb-center_y5)<=distance*distance)
+		else if((center_xb<center_x5+c_radius)&&(center_xb>center_x5-c_radius)&&(center_yb<center_y5+c_radius)&&(center_yb>center_y5-c_radius))
 			c5_state<=0;
 		else c5_state<=c5_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c6_state<=1;
-		else if((center_xb-center_x6)*(center_xb-center_x6)+(center_yb-center_y6)*(center_yb-center_y6)<=distance*distance)
+		else if((center_xb<center_x6+c_radius)&&(center_xb>center_x6-c_radius)&&(center_yb<center_y6+c_radius)&&(center_yb>center_y6-c_radius))
 			c6_state<=0;
 		else c6_state<=c6_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c7_state<=1;
-		else if((center_xb-center_x7)*(center_xb-center_x7)+(center_yb-center_y7)*(center_yb-center_y7)<=distance*distance)
+		else if((center_xb<center_x7+c_radius)&&(center_xb>center_x7-c_radius)&&(center_yb<center_y7+c_radius)&&(center_yb>center_y7-c_radius))
 			c7_state<=0;
 		else c7_state<=c7_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c8_state<=1;
-		else if((center_xb-center_x8)*(center_xb-center_x8)+(center_yb-center_y8)*(center_yb-center_y8)<=distance*distance)
+		else if((center_xb<center_x8+c_radius)&&(center_xb>center_x8-c_radius)&&(center_yb<center_y8+c_radius)&&(center_yb>center_y8-c_radius))
 			c8_state<=0;
 		else c8_state<=c8_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c9_state<=1;
-		else if((center_xb-center_x9)*(center_xb-center_x9)+(center_yb-center_y9)*(center_yb-center_y9)<=distance*distance)
+		else if((center_xb<center_x9+c_radius)&&(center_xb>center_x9-c_radius)&&(center_yb<center_y9+c_radius)&&(center_yb>center_y9-c_radius))
 			c9_state<=0;
 		else c9_state<=c9_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c10_state<=1;
-		else if((center_xb-center_x10)*(center_xb-center_x10)+(center_yb-center_y10)*(center_yb-center_y10)<=distance*distance)
+		else if((center_xb<center_x10+c_radius)&&(center_xb>center_x10-c_radius)&&(center_yb<center_y10+c_radius)&&(center_yb>center_y10-c_radius))
 			c10_state<=0;
 		else c10_state<=c10_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c11_state<=1;
-		else if((center_xb-center_x11)*(center_xb-center_x11)+(center_yb-center_y11)*(center_yb-center_y11)<=distance*distance)
+		else if((center_xb<center_x11+c_radius)&&(center_xb>center_x11-c_radius)&&(center_yb<center_y11+c_radius)&&(center_yb>center_y11-c_radius))
 			c11_state<=0;
 		else c11_state<=c11_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c12_state<=1;
-		else if((center_xb-center_x12)*(center_xb-center_x12)+(center_yb-center_y12)*(center_yb-center_y12)<=distance*distance)
+		else if((center_xb<center_x12+c_radius)&&(center_xb>center_x12-c_radius)&&(center_yb<center_y12+c_radius)&&(center_yb>center_y12-c_radius))
 			c12_state<=0;
 		else c12_state<=c12_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c13_state<=1;
-		else if((center_xb-center_x13)*(center_xb-center_x13)+(center_yb-center_y13)*(center_yb-center_y13)<=distance*distance)
+		else if((center_xb<center_x13+c_radius)&&(center_xb>center_x13-c_radius)&&(center_yb<center_y13+c_radius)&&(center_yb>center_y13-c_radius))
 			c13_state<=0;
 		else c13_state<=c13_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c14_state<=1;
-		else if((center_xb-center_x14)*(center_xb-center_x14)+(center_yb-center_y14)*(center_yb-center_y14)<=distance*distance)
+		else if((center_xb<center_x14+c_radius)&&(center_xb>center_x14-c_radius)&&(center_yb<center_y14+c_radius)&&(center_yb>center_y14-c_radius))
 			c14_state<=0;
 		else c14_state<=c14_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c15_state<=1;
-		else if((center_xb-center_x15)*(center_xb-center_x15)+(center_yb-center_y15)*(center_yb-center_y15)<=distance*distance)
+		else if((center_xb<center_x15+c_radius)&&(center_xb>center_x15-c_radius)&&(center_yb<center_y15+c_radius)&&(center_yb>center_y15-c_radius))
 			c15_state<=0;
 		else c15_state<=c15_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c16_state<=1;
-		else if((center_xb-center_x16)*(center_xb-center_x16)+(center_yb-center_y16)*(center_yb-center_y16)<=distance*distance)
+		else if((center_xb<center_x16+c_radius)&&(center_xb>center_x16-c_radius)&&(center_yb<center_y16+c_radius)&&(center_yb>center_y16-c_radius))
 			c16_state<=0;
 		else c16_state<=c16_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c17_state<=1;
-		else if((center_xb-center_x17)*(center_xb-center_x17)+(center_yb-center_y17)*(center_yb-center_y17)<=distance*distance)
+		else if((center_xb<center_x17+c_radius)&&(center_xb>center_x17-c_radius)&&(center_yb<center_y17+c_radius)&&(center_yb>center_y17-c_radius))
 			c17_state<=0;
 		else c17_state<=c17_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c18_state<=1;
-		else if((center_xb-center_x18)*(center_xb-center_x18)+(center_yb-center_y18)*(center_yb-center_y18)<=distance*distance)
+		else if((center_xb<center_x18+c_radius)&&(center_xb>center_x18-c_radius)&&(center_yb<center_y18+c_radius)&&(center_yb>center_y18-c_radius))
 			c18_state<=0;
 		else c18_state<=c18_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c19_state<=1;
-		else if((center_xb-center_x19)*(center_xb-center_x19)+(center_yb-center_y19)*(center_yb-center_y19)<=distance*distance)
+		else if((center_xb<center_x19+c_radius)&&(center_xb>center_x19-c_radius)&&(center_yb<center_y19+c_radius)&&(center_yb>center_y19-c_radius))
 			c19_state<=0;
 		else c19_state<=c19_state;
 	end
 
 	always@(posedge lclk) begin
 		if(reset) c20_state<=1;
-		else if((center_xb-center_x20)*(center_xb-center_x20)+(center_yb-center_y20)*(center_yb-center_y20)<=distance*distance)
+		else if((center_xb<center_x20+c_radius)&&(center_xb>center_x20-c_radius)&&(center_yb<center_y20+c_radius)&&(center_yb>center_y20-c_radius))
 			c20_state<=0;
 		else c20_state<=c20_state;
 	end
