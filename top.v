@@ -39,7 +39,7 @@ module top(
 	                     .DATA(KDATA));
 	lowclk   i_lclk( .clk(CLK), .reset(RESET), .period(period),
 	                 .o_lclk(lclk) );
-	show     i_show( .clk(CLK), .reset(RESET), .swh(SWH), .lclk(lclk), .kdata(KDATA),
+	show     i_show( .clk(CLK), .reset(RESET), .lclk(lclk), .kdata(KDATA),
 	                 .hsync(hsync), .vsync(vsync), .R(R), .G(G), .B(B) );
 	assign LED=0;
 	assign period=32'h0000_ffff;

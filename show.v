@@ -496,7 +496,7 @@ module show(
 	always@(posedge lclk) begin // Bullet's state(static or moving)
 		if(reset) b_state<=0;
 		else if(kdata==8'h29) b_state<=1;
-		else if(center_yb>623) b_state<=0;
+		else if(kdata==8'h15||center_yb>623) b_state<=0;
 		else b_state<=b_state;
 	end
 
@@ -520,7 +520,6 @@ module show(
 				4'b0101: bdx_state<=2;
 				4'b0110: bdx_state<=2;
 				4'b0111: bdx_state<=2;
-				end
 				// Moving
 				4'b1000: begin
 					if(center_xb==104) bdx_state<=1;
@@ -580,7 +579,6 @@ module show(
 				4'b0101: bdy_state<=1;
 				4'b0110: bdy_state<=0;
 				4'b0111: bdy_state<=2;
-				end
 				// Moving
 				4'b1000: begin
 					if(center_yb==23) bdy_state<=1;
